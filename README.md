@@ -40,3 +40,4 @@ Now that I feel like I have the proper tools, I can execute quickly on the imple
 
 - I'll start by hardcoding an array of "user" data and exporting that from a file. Later this should be replaced by a repository/DB layer.
 - Now I can update the GraphQL schema and create the queries that I need. I'll also wire them up to their resolvers since it's all in one file at the moment.
+- At this point, I want all the data available on my pages. So I'll update the query on the home page, render a link to a user's profile, and create a profile page that also fetches data.
