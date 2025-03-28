@@ -21,9 +21,11 @@ export default function UserRow({ user }: UserRowProps) {
           <h2 className="text-lg font-body">{user.name}</h2>
         </div>
 
-        <span className="text-md font-body">
-          {user.friends.length} friend{user.friends.length === 1 ? '' : 's'}
-        </span>
+        {user.friends && (
+          <span className="text-md font-body">
+            {user.friends.length} friend{user.friends.length === 1 ? '' : 's'}
+          </span>
+        )}
       </div>
     </Link>
   );
