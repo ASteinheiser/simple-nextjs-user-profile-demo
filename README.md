@@ -22,6 +22,7 @@ Then I generated the project with `npx create-next-app@latest`, as this was the 
 - The first step is clearing out the boilerplate files and rendering a simple page at the route: "/" with the text: "Users".
 - Then I'll add all the necessary icons and images to the `public/` folder.
 - Quickly update the html metadata via `layout.tsx`.
+- Now time to update the styles and fonts. By matching my theme in code to the color/size values from the design, I'll spend less time tweaking CSS.
 
 ### Feature execution
 blah
