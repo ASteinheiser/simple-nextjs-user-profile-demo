@@ -19,10 +19,16 @@ Then I generated the project with `npx create-next-app@latest`, as this was the 
 - TailWindCSS: This will give me some basic styles out of the box, saving me time.
 
 ### Project setup
+#### Frontend
 - The first step is clearing out the boilerplate files and rendering a simple page at the route: "/" with the text: "Users".
 - Then I'll add all the necessary icons and images to the `public/` folder.
 - Quickly update the html metadata via `layout.tsx`.
 - Now time to update the styles and fonts. By matching my theme in code to the color/size values from the design, I'll spend less time tweaking CSS.
+
+Now that I feel like the project is in a good place to create the necessary frontend components, I'll move on to setting up the backend API.
+
+#### Backend
+- I'm going to install the bare minimum to get a basic GraphQL server running. The reason I choose this over REST is that it will allow me to have better type safety across the frontend and backend, especially if something like [codegen](https://the-guild.dev/graphql/codegen) is installed.
 
 ### Feature execution
 blah
