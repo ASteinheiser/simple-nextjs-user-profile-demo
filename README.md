@@ -21,6 +21,7 @@ Then I generated the project with `npx create-next-app@latest`, as this was the 
 ### Project setup
 - The first step is clearing out the boilerplate files and rendering a simple page at the route: "/" with the text: "Users".
 - Then I'll add all the necessary icons and images to the `public/` folder.
+- Quickly update the html metadata via `layout.tsx`.
 
 ### Feature execution
 blah
