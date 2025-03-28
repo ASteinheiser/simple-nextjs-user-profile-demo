@@ -29,6 +29,8 @@ Now that I feel like the project is in a good place to create the necessary fron
 
 #### Backend
 - I'm going to install the bare minimum to get a basic GraphQL server running. The reason I choose this over REST is that it will allow me to have better type safety across the frontend and backend, especially if something like [codegen](https://the-guild.dev/graphql/codegen) is installed.
+- Following the instructions on the npm package `@as-integrations/next`, I'll create a basic GraphQL server and test it with an API debugging tool, such as [yaak](https://yaak.app/).
+    - I did get stuck here for a little bit. I did not realize that, because this version of NextJS uses App Router by default, I needed to change my filename for my graphql server from `index.ts` -> `route.ts`. Initially, I was seeing "cors" related logs when trying to test the API, so I spun my wheels for a little searching that before reading definitively that NextJS, by default, [should allow localhost](https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins). I was able to resolve this issue by searching for "nextjs app router api 404" and finding a [stackoverflow post](https://stackoverflow.com/questions/76336930/fetching-next-js-api-route-in-the-app-directory-gives-404-not-found).
 
 ### Feature execution
 blah
