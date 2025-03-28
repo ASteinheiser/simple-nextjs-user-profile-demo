@@ -18,10 +18,10 @@ export default function UserRow({ user }: UserRowProps) {
             height={120}
           />
 
-          <h2 className="text-lg">{user.name}</h2>
+          <h2 className="text-lg font-body">{user.name}</h2>
         </div>
 
-        <span className="text-md">
+        <span className="text-md font-body">
           {user.friends.length} friend{user.friends.length === 1 ? '' : 's'}
         </span>
       </div>

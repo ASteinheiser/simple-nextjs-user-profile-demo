@@ -27,7 +27,11 @@ export default async function Home() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col gap-6 max-w-xl m-auto p-6">
+      <h1 className="text-xl font-title">Users</h1>
+
+      <div className="w-full h-[2px] bg-secondary" />
+
       {(data?.users ?? []).map((user: User) => (
         <UserRow key={user.id} user={user} />
       ))}
