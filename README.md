@@ -39,3 +39,4 @@ Now that I feel like I have the proper tools, I can execute quickly on the imple
 ### Feature execution
 
 - I'll start by hardcoding an array of "user" data and exporting that from a file. Later this should be replaced by a repository/DB layer.
+- Now I can update the GraphQL schema and create the queries that I need. I'll also wire them up to their resolvers since it's all in one file at the moment.
