@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { gql } from "@apollo/client";
 import { createGraphClient } from "@/client-api/graph-client";
 import type { User } from "@/app/api/graphql/user-data";
+import UserRow from "@/components/UserRow";
 
 export default async function Home() {
   const client = createGraphClient();
@@ -29,11 +29,7 @@ export default async function Home() {
   return (
     <div>
       {(data?.users ?? []).map((user: User) => (
-        <Link href={`/user/${user.id}`} key={user.id}>
-          <div>
-            <h2>{user.name}</h2>
-          </div>
-        </Link>
+        <UserRow key={user.id} user={user} />
       ))}
     </div>
   );
