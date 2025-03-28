@@ -14,8 +14,8 @@ export default function UserRow({ user }: UserRowProps) {
           <Image
             src={`/profile-${user.profilePictureVariant}.svg`}
             alt={user.name}
-            width={120}
-            height={120}
+            width={80}
+            height={80}
           />
 
           <h2 className="text-lg font-body">{user.name}</h2>
