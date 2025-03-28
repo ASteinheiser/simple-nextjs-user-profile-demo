@@ -34,5 +34,8 @@ Now that I feel like the project is in a good place to create the necessary fron
 
 The final setup step is to ensure that the data is available inside my page components. For this, I'll use [Apollo](https://www.apollographql.com/) client, as it provides a quick and clean way to interact with my GraphQL API and has plenty of support/documentation.
 
+Now that I feel like I have the proper tools, I can execute quickly on the implementation.
+
 ### Feature execution
-blah
+
+- I'll start by hardcoding an array of "user" data and exporting that from a file. Later this should be replaced by a repository/DB layer.
